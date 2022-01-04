@@ -54,7 +54,7 @@ h3 {
 
 img{
   max-width: 100%;
-
+  padding: 10px;
 }
 .wrapper-img{
     cursor: pointer;
@@ -87,11 +87,6 @@ img{
   /* transition: all is ease-in-out; */
   padding-right: 20px;
 }
-
-.books {
-  width: 22%;
-}
-
 .container {
     height: 100vh;
     z-index: 2;
