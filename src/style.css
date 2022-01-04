@@ -1,0 +1,34 @@
+/* ---- reset ---- */
+#main {
+  position: absolute;
+  color: white;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+  width: 100%;
+  height: 100px;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 1600px;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
