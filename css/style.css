@@ -14,7 +14,9 @@ html {
     margin: 0;
     padding: 0;
 }
-
+#name {
+    font-size: 40px;
+}
 body {
     overflow: hidden;
 }
@@ -120,7 +122,7 @@ img{
     left: 35%;
     width: 25%;
     height: 30%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(87, 87, 87, 0.1);
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-transition: all 400ms 600ms, width 300ms 300ms, background-color 300ms 600ms;
