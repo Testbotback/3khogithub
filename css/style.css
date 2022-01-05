@@ -18,7 +18,9 @@ html {
 body {
     overflow: hidden;
 }
-
+h3 {
+    color: #b0d138;
+}
 p {
     font-family: 'Exo 2';
     text-align: justify;
@@ -615,12 +617,12 @@ a.svg:after {
 }
 
 .copyright p {
-    color: #3a5461;
+    color: #ffffff;
 }
 
 .copyright .fa {
     display: inline-block;
-    color: #f6f930;
+    color: #ffe600;
     font: 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
@@ -633,7 +635,7 @@ a.svg:after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(#000000, #e3e3e4);
+    background-image: linear-gradient(#000000, #121212);
     background-size: cover;
     z-index: 1;
 }
