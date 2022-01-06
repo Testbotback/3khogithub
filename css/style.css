@@ -2,13 +2,11 @@ html {
     box-sizing: border-box;
     font-family: 'Exo 2';
 }
-
 @font-face {
     font-family: 'Exo 2';
     src: url('../font/exo2/Exo2-Regular.ttf');
     font-size: 13pt;
 }
-
 *, *:before, *:after {
     box-sizing: inherit;
     margin: 0;
@@ -16,6 +14,7 @@ html {
 }
 #name {
     font-size: 40px;
+    padding: 5px;
 }
 body {
     overflow: hidden;
