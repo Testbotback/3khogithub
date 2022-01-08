@@ -198,7 +198,45 @@
               <div class="box__content-text">
                 <h2 class='box__content-text-heading'>Always in progress...</h2>
 
+                <link rel="stylesheet" href="/css/search.css">
 
+                <script>
+                  function myFunction() {
+                      var input, filter, ul, li, a, i, txtValue;
+                      input = document.getElementById("myInput");
+                      filter = input.value.toUpperCase();
+                      ul = document.getElementById("myUL");
+                      li = ul.getElementsByTagName("li");
+                      for (i = 0; i < li.length; i++) {
+                          a = li[i].getElementsByTagName("a")[0];
+                          txtValue = a.textContent || a.innerText;
+                          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                              li[i].style.display = "";
+                          } else {
+                              li[i].style.display = "none";
+                          }
+                      }
+                  }
+                  </script>
+
+                  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+                  <ul id="myUL">
+                    <!-- Template to add more rows: 
+                    <li><a href="/projects/GAME/">Title</a></li>
+                    -->
+
+
+                    <li><a href="/projects/2048/">2048</a></li>
+                    <li><a href="/projects/chill-radio/">Chill Radio</a></li>
+                    <li><a href="/projects/evil-glitch/">Evil Glitch</a></li>
+                    <li><a href="/projects/idle-shark/">Idle Shark</a></li>
+
+                </ul>
+
+                <!--- 
+                  Old project page design, switched to search box.
+                  
                 <div class="css_grid_gallery">
                   <a href="projects/sand-game" target="_blank"><img width="200" src="projects/sand-game/sand-game.PNG"/></a>
                   <a href="projects/rooftop-snipers/" target="_blank"><img width="200" src="projects/rooftop-snipers/img/preview.png"/></a>
@@ -207,7 +245,7 @@
                   <a href="projects/chill-radio/" target="_blank"><img width="200" src="projects/chill-radio/img/icon.png"/></a>
                   <a href="projects/evil-glitch/" target="_blank"><img width="200" src="projects/evil-glitch/evil.png"/></a>
                   <a href="projects/n-gon/" target="_blank"><img width="200" src="projects/n-gon/img/n-gonbot.png"/></a>
-                </div>
+                </div> -->
 
 
               </div>
