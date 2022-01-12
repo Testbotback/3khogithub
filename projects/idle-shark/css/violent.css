@@ -131,7 +131,7 @@ pre {
   text-shadow: 2px 2px 3px #450808;
 }
 #title h1 {
-  margin: 0.1em auto 0.3em auto;
+  margin: 0.1em auto 0.3em;
 }
 #title h2 {
   text-align: left;
@@ -163,7 +163,7 @@ pre {
 }
 #titlebar ul {
   padding: 0.2em 0;
-  margin: 0.4em auto 0.6em auto;
+  margin: 0.4em auto 0.6em;
 }
 #titlemenu a:link,
 #titlemenu a:visited {
@@ -529,16 +529,16 @@ button.min-block {
   vertical-align: super;
 }
 button:hover {
-  -webkit-box-shadow: 0px 0px 2px 2px #975f5f;
-  -moz-box-shadow: 0px 0px 2px 2px #975f5f;
-  box-shadow: 0px 0px 2px 2px #975f5f;
+  -webkit-box-shadow: 0 0 2px 2px #975f5f;
+  -moz-box-shadow: 0 0 2px 2px #975f5f;
+  box-shadow: 0 0 2px 2px #975f5f;
 }
 button:active {
   background-color: #5c1919;
   color: #714141;
-  -webkit-box-shadow: 0px 3px 7px 7px #450808 inset;
-  -moz-box-shadow: 0px 3px 7px 7px #450808 inset;
-  box-shadow: 0px 3px 7px 7px #450808 inset;
+  -webkit-box-shadow: 0 3px 7px 7px #450808 inset;
+  -moz-box-shadow: 0 3px 7px 7px #450808 inset;
+  box-shadow: 0 3px 7px 7px #450808 inset;
 }
 button:active .medDesc {
   font-size: 80%;
@@ -597,7 +597,7 @@ button:disabled div {
   border-radius: 5px;
   pointer-events: none;
   display: block;
-  margin: 0 auto 0.4em auto;
+  margin: 0 auto 0.4em;
 }
 .button-icon-side {
   vertical-align: middle;
@@ -610,7 +610,7 @@ button:disabled div {
   border-radius: 5px;
   pointer-events: none;
   display: inline-block;
-  margin: 0em 0.4em 0.4em 0.4em;
+  margin: 0 0.4em 0.4em;
 }
 .tint {
   position: relative;
@@ -629,7 +629,7 @@ button:disabled div {
 #tabSceneImage {
   vertical-align: middle;
   display: block;
-  margin: 0.1em auto 0.4em auto;
+  margin: 0.1em auto 0.4em;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -640,7 +640,7 @@ button:disabled div {
 #tabSceneImageRed {
   vertical-align: middle;
   display: block;
-  margin: 0.1em auto 0.4em auto;
+  margin: 0.1em auto 0.4em;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -651,7 +651,7 @@ button:disabled div {
 #tabSceneImageEssence {
   vertical-align: middle;
   display: block;
-  margin: 0.1em auto 0.4em auto;
+  margin: 0.1em auto 0.4em;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -814,16 +814,16 @@ button:disabled div {
   box-shadow: 0 0 3px 3px #73d0b1;
 }
 .gatewayButton:hover {
-  -webkit-box-shadow: 0px 0px 2px 2px #ace3d1;
-  -moz-box-shadow: 0px 0px 2px 2px #ace3d1;
-  box-shadow: 0px 0px 2px 2px #ace3d1;
+  -webkit-box-shadow: 0 0 2px 2px #ace3d1;
+  -moz-box-shadow: 0 0 2px 2px #ace3d1;
+  box-shadow: 0 0 2px 2px #ace3d1;
 }
 .gatewayButton:active {
   background-color: #2b7f63;
   color: #73d0b1;
-  -webkit-box-shadow: 0px 3px 7px 7px #2b7f63 inset;
-  -moz-box-shadow: 0px 3px 7px 7px #2b7f63 inset;
-  box-shadow: 0px 3px 7px 7px #2b7f63 inset;
+  -webkit-box-shadow: 0 3px 7px 7px #2b7f63 inset;
+  -moz-box-shadow: 0 3px 7px 7px #2b7f63 inset;
+  box-shadow: 0 3px 7px 7px #2b7f63 inset;
 }
 .gatewayButton:active .medDesc {
   color: #86d6bc;
@@ -864,16 +864,16 @@ button:disabled div {
   box-shadow: 0 0 3px 3px #73d0b1;
 }
 .gateway button:hover {
-  -webkit-box-shadow: 0px 0px 2px 2px #ace3d1;
-  -moz-box-shadow: 0px 0px 2px 2px #ace3d1;
-  box-shadow: 0px 0px 2px 2px #ace3d1;
+  -webkit-box-shadow: 0 0 2px 2px #ace3d1;
+  -moz-box-shadow: 0 0 2px 2px #ace3d1;
+  box-shadow: 0 0 2px 2px #ace3d1;
 }
 .gateway button:active {
   background-color: #2b7f63;
   color: #73d0b1;
-  -webkit-box-shadow: 0px 3px 7px 7px #2b7f63 inset;
-  -moz-box-shadow: 0px 3px 7px 7px #2b7f63 inset;
-  box-shadow: 0px 3px 7px 7px #2b7f63 inset;
+  -webkit-box-shadow: 0 3px 7px 7px #2b7f63 inset;
+  -moz-box-shadow: 0 3px 7px 7px #2b7f63 inset;
+  box-shadow: 0 3px 7px 7px #2b7f63 inset;
 }
 .gateway button:active .medDesc {
   color: #86d6bc;
@@ -914,16 +914,16 @@ button.gateway div {
   box-shadow: 0 0 3px 3px #73d0b1;
 }
 button.gateway:hover {
-  -webkit-box-shadow: 0px 0px 2px 2px #ace3d1;
-  -moz-box-shadow: 0px 0px 2px 2px #ace3d1;
-  box-shadow: 0px 0px 2px 2px #ace3d1;
+  -webkit-box-shadow: 0 0 2px 2px #ace3d1;
+  -moz-box-shadow: 0 0 2px 2px #ace3d1;
+  box-shadow: 0 0 2px 2px #ace3d1;
 }
 button.gateway:active {
   background-color: #2b7f63;
   color: #73d0b1;
-  -webkit-box-shadow: 0px 3px 7px 7px #2b7f63 inset;
-  -moz-box-shadow: 0px 3px 7px 7px #2b7f63 inset;
-  box-shadow: 0px 3px 7px 7px #2b7f63 inset;
+  -webkit-box-shadow: 0 3px 7px 7px #2b7f63 inset;
+  -moz-box-shadow: 0 3px 7px 7px #2b7f63 inset;
+  box-shadow: 0 3px 7px 7px #2b7f63 inset;
 }
 button.gateway:active .medDesc {
   color: #86d6bc;
