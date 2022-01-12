@@ -23,12 +23,12 @@
  */
 var shorten = function (array, number) {
     // remove 'number' characters from the end of 'array', in place (no return)
-    for (var i = number; i > 0; i--) { array.pop(); };
+    for (var i = number; i > 0; i--) { array.pop(); }
 };
 var rstrip = function (string, character) {
     // strip trailing 'character' characters from the end of the string 'string'
     var i = string.length;
-    while (string[i - 1] === character) { i--; };
+    while (string[i - 1] === character) { i--; }
     return string.slice(0, i);
 };
 
@@ -39,7 +39,7 @@ var ascii85 = this.ascii85 = (function () {
         return 'Ascii85CodecError' + (this.message ? ': ' + this.message : '');
     };
     var assertOrBadInput = function (expression, message) {
-        if (!expression) { throw new ascii85.Ascii85CodecError(message) };
+        if (!expression) { throw new ascii85.Ascii85CodecError(message) }
     };
     ascii85.encode = function (bytes) {
         assertOrBadInput(!(/[^\x00-\xFF]/.test(bytes)), 'Input contains out-of-range characters.'); // disallow two-byte chars
@@ -55,7 +55,7 @@ var ascii85 = this.ascii85 = (function () {
             if (newchars === 0) {
                 out_array.push(0x7a); // special case: 4 null bytes -> 'z'
                 continue;
-            };
+            }
             var char1, char2, char3, char4, char5;
             char5 = newchars % 85; newchars = (newchars - char5) / 85;
             char4 = newchars % 85; newchars = (newchars - char4) / 85;
@@ -64,7 +64,7 @@ var ascii85 = this.ascii85 = (function () {
             char1 = newchars % 85;
             out_array.push(char1 + 0x21, char2 + 0x21, char3 + 0x21,
                     char4 + 0x21, char5 + 0x21);
-        };
+        }
         shorten(out_array, padding.length);
         return '<~' + String.fromCharCode.apply(String, out_array) + '~>'
     };
@@ -89,7 +89,7 @@ var ascii85 = this.ascii85 = (function () {
                     (newchars >> 020) & 0xFF,
                     (newchars >> 010) & 0xFF,
                     (newchars)        & 0xFF);
-        };
+        }
         shorten(out_array, padding.length);
         return String.fromCharCode.apply(String, out_array);
     };
@@ -99,12 +99,12 @@ var ascii85 = this.ascii85 = (function () {
 var base64Codec = function (alphabet, padCharacter) {
     // Returns an object with 'encode' and 'decode' functions for the specified
     // 64-character 'alphabet'
-    if (alphabet.length != 64) { throw new Error('Alphabet must be 64 characters.') };
+    if (alphabet.length != 64) { throw new Error('Alphabet must be 64 characters.') }
     var codec = {};
     var decode_map = {};
     for (var i=0, n=alphabet.length; i < n; i++) {
         decode_map[alphabet[i]] = i;
-    };
+    }
     // used to sniff out characters outside the alphabet
     var alphabet_inverse_regexp = new RegExp('[^' + alphabet.replace(/[\.\^\$\*\+\?\{\[\]\\\|\(\)]/g, '\\$&') + ']');
     codec.Base64CodecError = function (message) { this.message = message; };
@@ -112,10 +112,10 @@ var base64Codec = function (alphabet, padCharacter) {
         return 'Base64CodecError' + (this.message ? ': ' + this.message : '');
     };
     var assertOrBadInput = function (expression, message) {
-        if (!expression) { throw new codec.Base64CodecError(message) };
+        if (!expression) { throw new codec.Base64CodecError(message) }
     };
     codec.encode = function (bytes, padOutput) {
-        if (padOutput == null) { padOutput = true; }; // default to strict output
+        if (padOutput == null) { padOutput = true; } // default to strict output
         assertOrBadInput(!(/[^\x00-\xFF]/.test(bytes)), 'Input contains out-of-range characters.'); // disallow two-byte chars
         var padding = '\x00\x00\x00'.slice((bytes.length % 3) || 3);
         bytes += padding; // pad with null bytes
@@ -130,7 +130,7 @@ var base64Codec = function (alphabet, padCharacter) {
                 alphabet[(newchars >> 12) & 077],
                 alphabet[(newchars >> 6)  & 077],
                 alphabet[(newchars)       & 077]);
-        };
+        }
         output_padding = (padOutput && padCharacter !== undefined) ?
             Array(5).join(padCharacter).slice(-padding.length) :
             '';
@@ -139,11 +139,11 @@ var base64Codec = function (alphabet, padCharacter) {
     };
     codec.decode = function (b64text, requirePadding, disallowWhitespace) {
         // by default don't require padding, and allow whitespace.
-        if (!disallowWhitespace) { b64text = b64text.replace(/\s/g, ''); }; // kill whitespace
+        if (!disallowWhitespace) { b64text = b64text.replace(/\s/g, ''); } // kill whitespace
         if (padCharacter != null) {
             assertOrBadInput(!requirePadding || !(b64text.length % 4), 'Input length not divisible by 4.');
             b64text = rstrip(b64text, padCharacter)
-        };
+        }
         assertOrBadInput(!alphabet_inverse_regexp.test(b64text), 'Input contains out-of-range characters.');
         var padding = Array(5 - ((b64text.length % 4) || 4)).join(alphabet[alphabet.length - 1]);
         b64text += padding; // pad with last letter of alphabet, so math works out
@@ -158,7 +158,7 @@ var base64Codec = function (alphabet, padCharacter) {
                     (newchars >> 020) & 0xFF,
                     (newchars >> 010) & 0xFF,
                     (newchars)        & 0xFF);
-        };
+        }
         shorten(out_array, padding.length); // strip 'decoded' padding
         return String.fromCharCode.apply(String, out_array);
     };

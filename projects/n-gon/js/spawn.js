@@ -2449,7 +2449,7 @@ const spawn = {
                 } else {
                     this.laserPos = this.position;
                 }
-            };
+            }
         }
     },
     laserTargetingBoss(x, y, radius = 80) {

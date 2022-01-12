@@ -85,7 +85,7 @@ window.Html5Ima = (function() {
     return function() {
       fn.apply(thisObj, arguments);
     };
-  };
+  }
 
   var Html5Ima = function(config) {
     this.adTagUrl = config.adTagUrl;
