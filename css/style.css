@@ -61,7 +61,7 @@ img{
 .wrapper-img{
     cursor: pointer;
     height: auto;
-    align: left;
+    box-align: left;
     padding-right: 10px;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -70,7 +70,7 @@ img{
     }
 .wrapper-img .img-hide{
     height: auto;
-    align: left;
+    box-align: left;
     padding-right: 10px;
     margin-bottom: 10%;
     position: relative;
