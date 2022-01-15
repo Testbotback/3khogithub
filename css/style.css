@@ -117,8 +117,8 @@ img{
 .box__row-cell {
     position: absolute;
     top: 20%;
-    left: 35%;
-    width: 25%;
+    left: 10%;
+    width: 30%;
     height: 30%;
     background-color: rgba(87, 87, 87, 0.1);
     -webkit-transform: translateZ(0);
@@ -433,6 +433,11 @@ img{
     left: 5%;
 }
 
+.box__title-mobile {
+    justify-self: center;
+    align-self:center;
+}
+
 .box__title-heading {
     position: relative;
     color: #0892d0;
@@ -640,4 +645,28 @@ a.svg:after {
 #page-wrapper {
     position: relative;
     z-index: 2;
+}
+
+.mobilecontainer {
+    height: 100vh;
+    z-index: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(43, 43, 43, 0.0);
+    z-index: 1;
+    overflow: hidden;
 }
