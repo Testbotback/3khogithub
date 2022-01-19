@@ -15,4 +15,12 @@ You can preview the current state of the projects with the link below:
 
 https://3kh0.github.io/website-v2/
 
-## 
+## Cloning
+
+You can clone this repo with this handy URL:
+```
+https://github.com/3kh0/website-v2.git
+```
+## Contributing
+
+If you would like to help, feel free to fork this and add anything, hit me up on discord if you want to know what going to be added.
