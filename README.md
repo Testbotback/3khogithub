@@ -23,4 +23,13 @@ https://github.com/3kh0/website-v2.git
 ```
 ## Contributing
 
-If you would like to help, feel free to fork this and add anything, hit me up on discord if you want to know what going to be added.
+Here is a uncomplete list of what is being worked on at the moment:
+
+- [X] Get `index.html` working.
+- [X] Get the background working with particles.js
+- [ ] Add more games, *always in progress*
+- [ ] Get the site looking good for mobile.
+- [ ] Update they way projects are being showcased.
+- [ ] Get the codefactor rating up to a A.
+- [ ] Make sure the whole is is userfriendly!
+- [ ] Trasfer this repo to the main site.
