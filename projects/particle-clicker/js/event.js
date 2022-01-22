@@ -29,7 +29,7 @@ function ParticleEvent(type, count, external)
     }
 
     this.draw(16, true);
-};
+}
 
 ParticleEvent.prototype.draw = function(duration, init)
 {
