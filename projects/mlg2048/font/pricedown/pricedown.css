@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'pricedown';
+	src: url('./pricedown.eot');
+	src:
+		url('./pricedown.eot?#iefix') format('embedded-opentype'),
+		url('./pricedown.woff2') format('woff2'),
+		url('./pricedown.woff') format('woff'),
+		url('./pricedown.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
