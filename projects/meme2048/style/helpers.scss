@@ -1,18 +1,15 @@
-// Exponent
-// From: https://github.com/Team-Sass/Sassy-math/blob/master/sass/math.scss#L36
-
 @function exponent($base, $exponent) {
-  // reset value
+
   $value: $base;
-  // positive intergers get multiplied
+
   @if $exponent > 1 {
     @for $i from 2 through $exponent {
       $value: $value * $base; } }
-  // negitive intergers get divided. A number divided by itself is 1
+
   @if $exponent < 1 {
     @for $i from 0 through -$exponent {
       $value: $value / $base; } }
-  // return the last value written
+
   @return $value;
 }
 
@@ -20,7 +17,6 @@
   @return exponent($base, $exponent);
 }
 
-// Transition mixins
 @mixin transition($args...) {
   -webkit-transition: $args;
   -moz-transition: $args;
@@ -63,15 +59,12 @@
     @content;
   }
 }
-
-// Media queries
 @mixin smaller($width) {
   @media screen and (max-width: $width) {
     @content;
   }
 }
 
-// Clearfix
 @mixin clearfix {
   &:after {
     content: "";

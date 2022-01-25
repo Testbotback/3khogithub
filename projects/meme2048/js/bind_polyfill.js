@@ -1,9 +1,1 @@
-Function.prototype.bind = Function.prototype.bind || function (target) {
-  var self = this;
-  return function (args) {
-    if (!(args instanceof Array)) {
-      args = [args];
-    }
-    self.apply(target, args);
-  };
-};
+Function.prototype.bind=Function.prototype.bind||function(n){var t=this;return function(o){o instanceof Array||(o=[o]),t.apply(n,o)}};

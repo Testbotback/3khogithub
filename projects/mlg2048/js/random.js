@@ -1,15 +1,1 @@
-export function uniform() {
-	return Math.random() * 2 - 1;
-}
-
-export function bool(bias=0.5) {
-	return Math.random() > bias;
-}
-
-export function inv() {
-	return bool() ? 1 : -1;
-}
-
-export function pick(array) {
-	return array[Math.round(Math.random() * array.length - 0.5)];
-}
+export function uniform(){return 2*Math.random()-1}export function bool(n=.5){return Math.random()>n}export function inv(){return bool()?1:-1}export function pick(n){return n[Math.round(Math.random()*n.length-.5)]}
