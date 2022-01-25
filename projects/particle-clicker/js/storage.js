@@ -26,5 +26,5 @@ var ObjectStorage = (function() {
       load : function(key) { return null; },
       clear : function() {}
     };
-  };
+  }
 }());
