@@ -1,1 +1,85 @@
-function Grid(t){this.size=t,this.cells=[],this.build()}Grid.prototype.build=function(){for(var t=0;t<this.size;t++)for(var i=this.cells[t]=[],e=0;e<this.size;e++)i.push(null)},Grid.prototype.randomAvailableCell=function(){var t=this.availableCells();if(t.length)return t[Math.floor(Math.random()*t.length)]},Grid.prototype.availableCells=function(){var t=[];return this.eachCell((function(i,e,l){l||t.push({x:i,y:e})})),t},Grid.prototype.eachCell=function(t){for(var i=0;i<this.size;i++)for(var e=0;e<this.size;e++)t(i,e,this.cells[i][e])},Grid.prototype.cellsAvailable=function(){return!!this.availableCells().length},Grid.prototype.cellAvailable=function(t){return!this.cellOccupied(t)},Grid.prototype.cellOccupied=function(t){return!!this.cellContent(t)},Grid.prototype.cellContent=function(t){return this.withinBounds(t)?this.cells[t.x][t.y]:null},Grid.prototype.insertTile=function(t){this.cells[t.x][t.y]=t},Grid.prototype.removeTile=function(t){this.cells[t.x][t.y]=null},Grid.prototype.withinBounds=function(t){return t.x>=0&&t.x<this.size&&t.y>=0&&t.y<this.size};
+function Grid(size) {
+    this.size = size;
+  
+    this.cells = [];
+  
+    this.build();
+  }
+  
+  // Build a grid of the specified size
+  Grid.prototype.build = function () {
+    for (var x = 0; x < this.size; x++) {
+      var row = this.cells[x] = [];
+  
+      for (var y = 0; y < this.size; y++) {
+        row.push(null);
+      }
+    }
+  };
+  
+  // Find the first available random position
+  Grid.prototype.randomAvailableCell = function () {
+    var cells = this.availableCells();
+  
+    if (cells.length) {
+      return cells[Math.floor(Math.random() * cells.length)];
+    }
+  };
+  
+  Grid.prototype.availableCells = function () {
+    var cells = [];
+  
+    this.eachCell(function (x, y, tile) {
+      if (!tile) {
+        cells.push({ x: x, y: y });
+      }
+    });
+  
+    return cells;
+  };
+  
+  // Call callback for every cell
+  Grid.prototype.eachCell = function (callback) {
+    for (var x = 0; x < this.size; x++) {
+      for (var y = 0; y < this.size; y++) {
+        callback(x, y, this.cells[x][y]);
+      }
+    }
+  };
+  
+  // Check if there are any cells available
+  Grid.prototype.cellsAvailable = function () {
+    return !!this.availableCells().length;
+  };
+  
+  // Check if the specified cell is taken
+  Grid.prototype.cellAvailable = function (cell) {
+    return !this.cellOccupied(cell);
+  };
+  
+  Grid.prototype.cellOccupied = function (cell) {
+    return !!this.cellContent(cell);
+  };
+  
+  Grid.prototype.cellContent = function (cell) {
+    if (this.withinBounds(cell)) {
+      return this.cells[cell.x][cell.y];
+    } else {
+      return null;
+    }
+  };
+  
+  // Inserts a tile at its position
+  Grid.prototype.insertTile = function (tile) {
+    this.cells[tile.x][tile.y] = tile;
+  };
+  
+  Grid.prototype.removeTile = function (tile) {
+    this.cells[tile.x][tile.y] = null;
+  };
+  
+  Grid.prototype.withinBounds = function (position) {
+    return position.x >= 0 && position.x < this.size &&
+           position.y >= 0 && position.y < this.size;
+  };
+  

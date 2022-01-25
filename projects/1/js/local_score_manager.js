@@ -1,1 +1,48 @@
-function LocalScoreManager(){this.key="bestScore";var t=this.localStorageSupported();this.storage=t?window.localStorage:window.fakeStorage}window.fakeStorage={_data:{},setItem:function(t,e){return this._data[t]=String(e)},getItem:function(t){return this._data.hasOwnProperty(t)?this._data[t]:void 0},removeItem:function(t){return delete this._data[t]},clear:function(){return this._data={}}},LocalScoreManager.prototype.localStorageSupported=function(){var t="test",e=window.localStorage;try{return e.setItem(t,"1"),e.removeItem(t),!0}catch(t){return!1}},LocalScoreManager.prototype.get=function(){return this.storage.getItem(this.key)||0},LocalScoreManager.prototype.set=function(t){this.storage.setItem(this.key,t)};
+window.fakeStorage = {
+    _data: {},
+  
+    setItem: function (id, val) {
+      return this._data[id] = String(val);
+    },
+  
+    getItem: function (id) {
+      return this._data.hasOwnProperty(id) ? this._data[id] : undefined;
+    },
+  
+    removeItem: function (id) {
+      return delete this._data[id];
+    },
+  
+    clear: function () {
+      return this._data = {};
+    }
+  };
+  
+  function LocalScoreManager() {
+    this.key     = "bestScore";
+  
+    var supported = this.localStorageSupported();
+    this.storage = supported ? window.localStorage : window.fakeStorage;
+  }
+  
+  LocalScoreManager.prototype.localStorageSupported = function () {
+    var testKey = "test";
+    var storage = window.localStorage;
+  
+    try {
+      storage.setItem(testKey, "1");
+      storage.removeItem(testKey);
+      return true;
+    } catch (error) {
+      return false;
+    }
+  };
+  
+  LocalScoreManager.prototype.get = function () {
+    return this.storage.getItem(this.key) || 0;
+  };
+  
+  LocalScoreManager.prototype.set = function (score) {
+    this.storage.setItem(this.key, score);
+  };
+  

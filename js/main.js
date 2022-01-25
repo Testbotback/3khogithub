@@ -1,1 +1,48 @@
-$(document).ready((function(){var e=!1,o=$(".box__row"),t=$(".box__row-cell"),s=$(".box__content"),c=$(".box__close");o.on("click",".box__row-cell",(function(){if(!e){e=!0;var o=$(this).data("cell"),t=$(".box__content[data-content="+o+"]");$(this).addClass("active"),t.addClass("show-content"),c.addClass("box-close-active")}setTimeout((function(){e=!1}),1e3)})),c.on("click",(function(){e=!0,t.removeClass("active"),s.removeClass("show-content"),$(this).removeClass("box-close-active"),setTimeout((function(){e=!1}),1e3)})),t.on({mouseenter:function(){t.addClass("hover-cell"),$(this).removeClass("hover-cell")},mouseleave:function(){t.removeClass("hover-cell")}})}));
+$(document).ready(function() {
+    var animation = false,
+     animDur = 1000,
+     $row = $('.box__row'),
+     $cell = $('.box__row-cell'),
+     $content = $('.box__content'),
+     $closeBtn = $('.box__close');
+  
+    var active = function() {
+      if (!animation) {
+        animation = true;
+        var cellData = $(this).data('cell');
+        var $content = $('.box__content[data-content=' + cellData + ']');
+  
+        $(this).addClass('active');
+        $content.addClass('show-content');
+        $closeBtn.addClass('box-close-active');
+      }
+  
+      setTimeout(function() {
+        animation = false;
+      }, animDur);
+    }
+  
+    var close = function() {
+      animation = true;
+      $cell.removeClass('active');
+      $content.removeClass('show-content');
+      $(this).removeClass('box-close-active');
+  
+      setTimeout(function() {
+        animation = false;
+      }, animDur);
+    }
+  
+    $row.on('click', '.box__row-cell', active);
+    $closeBtn.on('click', close);
+    $cell.on({
+      mouseenter: function() {
+        $cell.addClass('hover-cell');
+        $(this).removeClass('hover-cell');
+      },
+      mouseleave: function() {
+        $cell.removeClass('hover-cell');
+      }
+    });
+  });
+  
