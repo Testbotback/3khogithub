@@ -61,7 +61,6 @@ img{
 .wrapper-img{
     cursor: pointer;
     height: auto;
-    align: left;
     padding-right: 10px;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -70,7 +69,6 @@ img{
     }
 .wrapper-img .img-hide{
     height: auto;
-    align: left;
     padding-right: 10px;
     margin-bottom: 10%;
     position: relative;
@@ -278,7 +276,7 @@ img{
 }
 
 .box__row-cell:nth-child(2) {
-    left: 65%;
+    left: 55%;
 }
 
 .box__row-cell:nth-child(3) {
@@ -446,15 +444,12 @@ img{
 
 .box__title {
     position: absolute;
-    top: 5%;
     left: 5%;
 }
 
 .box__title-mobile {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 25%;
+    position: absolute;
+    left: 5%;
 }
 
 .box__title-heading {
