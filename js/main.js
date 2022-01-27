@@ -62,4 +62,13 @@ function changecss(element, remove, add) {
 window.testformobile(navigator.userAgent, () => {
   changecss(document.getElementById("container"), "container", "mobilecontainer")
   changecss(document.getElementById("box__title"), "box__title", "box__title-mobile")
+  for (var i=0; i < document.getElementsByClassName("box__row-cell").length; i++) {
+    document.getElementsByClassName("box__row-cell")[i].classList.add("")
+  
+    // WORKING ON!!!
+
+    // The problem here is the .box__row-cell-mobile class getting put in instead of the normal one is the fact that the all the other css that changes the element further is not getting used. So im just adding a new element and using the !important thing
+  
+  
+  }
 })
