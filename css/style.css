@@ -82,7 +82,6 @@ img {
     left: 0;
     transition: all 0.5s ease-in-out;
 }
-
 .logo {
     width: 100px;
     height: 100px;
@@ -91,7 +90,7 @@ img {
 }
 .container {
     height: 100vh;
-    z-index: 2;
+    z-index: -1;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
