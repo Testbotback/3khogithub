@@ -1,0 +1,21 @@
+#hcb_settings {
+  color: white;
+  font-size: 16px;
+}
+.hcb-icon hcb-door-out {
+  width: 28px;
+  fill: white;
+  filter: invert(100%) sepia(6%) saturate(22%) hue-rotate(106deg) brightness(104%) contrast(106%);
+}
+.btn-secondary {
+  border-radius: 10px;
+}
+#hcb_submit {
+  border-radius: 10px;
+}
+#hcb_form_content {
+  border-radius: 10px;
+}
+#hcb_form_name {
+  border-radius: 10px;
+}
