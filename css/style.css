@@ -119,8 +119,8 @@ img {
 .box__row-cell {
     position: absolute;
     top: 20%;
-    left: 0%;
-    width: 45%;
+    left: 35%;
+    width: 25%;
     height: 30%;
     background-color: rgba(87, 87, 87, 0.1);
     -webkit-transform: translateZ(0);
@@ -183,7 +183,7 @@ img {
 .box__row-cell-info-title {
     letter-spacing: 2px;
     margin-top: 15px;
-    font-size: 17px;
+    font-size: 20px;
     color: #f6f930;
 }
 @media screen and (max-height: 692px) {
@@ -245,10 +245,10 @@ img {
     color: #fff;
 }
 .box__row-cell:nth-child(2) {
-    left: 55%;
+    left: 65%;
 }
 .box__row-cell:nth-child(3) {
-    left: 80%;
+    left: 100%;
 }
 .box__row:nth-child(2) .box__row-cell {
     top: 55%;
@@ -390,11 +390,7 @@ img {
 }
 .box__title {
     position: absolute;
-    left: 5%;
-}
-
-.box__title-mobile {
-    position: absolute;
+    top: 15%;
     left: 5%;
 }
 .box__title-heading {
@@ -549,7 +545,7 @@ a.svg:after {
     float: right-bottom;
     position: absolute;
     display: block;
-    padding-right: 75%;
+    padding-right: 35%;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0;
@@ -580,28 +576,4 @@ a.svg:after {
 #page-wrapper {
     position: relative;
     z-index: 2;
-}
-
-.mobilecontainer {
-    height: 100vh;
-    z-index: 2;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 80%;
-    height: 80%;
-    background-color: rgba(43, 43, 43, 0.0);
-    z-index: 1;
-    overflow: hidden;
 }
