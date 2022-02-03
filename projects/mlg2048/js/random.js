@@ -1,1 +1,0 @@
-export function uniform(){return 2*Math.random()-1}export function bool(n=.5){return Math.random()>n}export function inv(){return bool()?1:-1}export function pick(n){return n[Math.round(Math.random()*n.length-.5)]}
