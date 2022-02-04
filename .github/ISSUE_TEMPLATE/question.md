@@ -2,7 +2,7 @@
 name: Ask a question
 about: Ask a question and hopefully Echo will reply?
 title: ''
-labels: '❓ question'
+labels: '❓ Question'
 assignees: ''
 
 ---
