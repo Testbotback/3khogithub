@@ -1,11 +1,8 @@
 # 3kh0.github.io V2
 
-![GitHub Repo stars](https://img.shields.io/github/stars/3kh0/3kh0.github.io?color=yellow&label=Repo%20stars&logo=github)
-![GitHub issues](https://img.shields.io/github/issues/3kh0/3kh0.github.io?logo=github)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/3kh0/3kh0.github.io?logo=github)
-![GitHub repo size](https://img.shields.io/github/repo-size/3kh0/3kh0.github.io?label=Total%20size&logo=github)
-![Lines of code](https://img.shields.io/tokei/lines/github.com/3kh0/3kh0.github.io?color=yellow&label=Total%20lines&logo=github)
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/3kh0/3kh0.github.io?logo=codefactor)
+![GitHub issues](https://img.shields.io/github/issues/3kh0/3kh0.github.io?logo=github&style=flat-square) 
+![GitHub pull requests](https://img.shields.io/github/issues-pr/3kh0/3kh0.github.io?label=Pull%20Requests&logo=github&style=flat-square) 
+![GitHub repo size](https://img.shields.io/github/repo-size/3kh0/3kh0.github.io?label=Repo%20size&logo=github&style=flat-square)
 
 ## Cloning
 
