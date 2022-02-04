@@ -1,6 +1,6 @@
 ---
 name: Vulnerability report
-about: Found something that could be leak very important information?
+about: Found something that could be leak very important information? Do not use this if the website was blocked.
 title: ''
 labels: '🛡 Vulnerability'
 assignees: ''
