@@ -22,10 +22,10 @@ There are many ways to can help this project.
 
 ## Structure
 
-`index.html`: Main page
-`404.html`: 404 page
-`/projects`: Where all of the projects are hosted
-`/dump`: Mostly just random pages that dont fit anywhere else
-`/css`: CSS files
-`/js`: JS files
-`/img`: Photo assets
+`index.html`: Main page<br>
+`404.html`: 404 page<br>
+`/projects`: Where all of the projects are hosted<br>
+`/dump`: Mostly just random pages that dont fit anywhere else<br>
+`/css`: CSS files<br>
+`/js`: JS files<br>
+`/img`: Photo assets<br>
