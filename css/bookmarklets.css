@@ -1,21 +1,5 @@
-body {
-    font-family: Ubuntu;
-    font-size: "25px";
-    color: #fff;
-    text-align: left;
-    background-color: #1c1c1c;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-a:link {
+* {
+    background-color: black;
     color: white;
-}
-a:visited {
-    color: white;
-}
-a:hover {
-    color: wheat;
-}
-a:active {
-    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
