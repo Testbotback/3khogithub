@@ -2,18 +2,34 @@
 <html>
     <head>
         <title>Bookmarklets | 3kh0</title>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet" />
         <link href="/css/bookmarklets.css" rel="stylesheet" />
     </head>
     <body>
         <h1>Bookmarklet Collection</h1>
         <h2>General Info</h2>
-            <ul>
-            <li>How to add Bookmarklets<ul>
-            <li>Click the bookmark button (star), a box will pop up and click more. Where it says URL, copy and paste the bookmarklet code. Then click save and your bookmarklet should appear with other bookmarks.</li>
-            </ul>
+        <ul>
+            <li>
+                How to add Bookmarklets
+                <ul>
+                    <li>
+                        Click the bookmark button (star), a box will pop up and click more. Where it says URL, copy and paste the bookmarklet code. Then click save and your bookmarklet should appear with other bookmarks. It is that simple.
+                    </li>
+                </ul>
             </li>
+
+            <h3>X-Ray Goggles</h3>
+            <p>This lets you edit the raw HTML. It's very advanced editing.</p>
+            <p>javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())</p>
+
+            <h3>Rename Tab</h3>
+            <p>This just allows you to edit the title of the tab, try it out!</p>
+            <p>javascript:(function(){/* Made by 3kh0 https://3kh0.github.io */ var title=prompt("Welcome to the RenameTab setup! \n\nWhat would you like to set as the new title for this tab?\nUse%20the%20box%20below!%22);document.title=title})();</p>
+
+            <h3>Snake Game</h3>
+            <p>This makes a little game window that you can play snake on.</p>
+            <p>javascript:Q=32;m=b=Q*Q;a=[P=l=u=d=p=S=w=0];u=8;f=(h=j=t=(b+Q)/2)-1;(B=(D=document).body).appendChild(x=D.createElement("p"));(X=x.style).position="fixed";X.left=X.top=0;X.background="#FFF%22;x.innerHTML=%22%3Cp%3E%3C/p%3E%3Ccanvas%3E%22;v=(s=x.childNodes)[0];(s=s[1]).width=s.height=5*Q;c=s.getContext(%222d%22);%20onkeydown=onblur=F=function(e,g){g?a[f]?(w+=m,f=Math.random(l+=8)*(R=Q-2)*R|(u=0),F(f+=Q+1+2*(f/R|0),g)):F(f):0%3Ee?(l?--l:(y=t,t=a[t]-2,F(y)),S+=(w*=0.8)/4,m=999/(u++%20+10),a[h+=[-1,-Q,1,Q][d=p]]?B.removeChild(x,alert(%22Game%20Over!\nThe%20game%20window%20will%20now%20be%20closed.\n\nMade%20by%203kh0%22)):(F(h),F(e,j=h),v.innerHTML=P?(setTimeout(F,50,e,0),S|0):%22Press%20P%20to%20play!%20Made%20by%203kh0%22)):-e?(y=(a[e]=e%3CQ|e%3E=Q*Q-Q|!(e%Q)|e%Q==Q-1|2*(e==h))+(e==f),e==h&&(a[j]=2+h),c.fillStyle=%22hsl(%22+99*!a[e]+%22,%22+2*m+%22%,%22+50*y+%22%)%22,c.fillRect(e%Q*5,5*(e/Q|0),5,5)):isNaN(y=e.keyCode-37)|43==y?(P=y&&!P)&&F(-1):%20p=!P|y&-4|!(y^2^d)?p:y;return!1};for(;--b;F(b));void%20F(-1);</p>
+
+        </ul>
     </body>
 </html>
