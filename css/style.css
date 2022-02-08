@@ -555,14 +555,6 @@ a.svg:after {
 .copyright p {
     color: #ffffff;
 }
-.copyright .fa {
-    display: inline-block;
-    color: #ffe600;
-    font: 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
 #particles-js {
     position: fixed;
     top: 0;
