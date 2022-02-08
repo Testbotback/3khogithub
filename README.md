@@ -1,9 +1,14 @@
-# 3kh0.github.io V2
+# 3kh0.github.io
 
 ![GitHub issues](https://img.shields.io/github/issues/3kh0/3kh0.github.io?logo=github&style=flat-square) 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/3kh0/3kh0.github.io?label=Pull%20requests&logo=github&style=flat-square) 
 ![GitHub](https://img.shields.io/github/license/3kh0/3kh0.github.io?label=Licence&logo=github&style=flat-square) 
 ![GitHub repo size](https://img.shields.io/github/repo-size/3kh0/3kh0.github.io?label=Repo%20size&logo=github&style=flat-square)
+
+This repo hosts my website. It is a revamp to the old one that can be found [here](https://github.com/3kh0/website-v1). Take a look around!
+
+You can view the actual site with this link: [3kh0.github.io](https://3kh0.github.io)
+
 
 ## Cloning
 
