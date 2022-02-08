@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                color: #ffffff;
+                background-color: #1f1f1f;
+            }
+        </style>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -15,8 +25,9 @@
     <body>
             <h1>404 Error</h1>
             <p>
-                The requested URL or file was not found on this server. <br />
-                That is all we know.
+                The requested URL or file was not found on this server. <br>
+                That is all we know.<br><br>
+                If you want to you can go to the <a href="/">homepage</a>.
             </p>
             <h2>Stats for nerds</h2>
             Requested URL: <code id="full"></code><br />
@@ -32,8 +43,5 @@
                 document.getElementById("proto").innerHTML = window.location.protocol;
             </script>
             <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-            <script src="js/main.js"></script>
-            <script src="js/particles.js"></script>
     </body>
 </html>
