@@ -6,71 +6,96 @@
         <link href="/css/bookmarklets.css" rel="stylesheet" />
     </head>
     <body>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
+        <script>
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            (window.dataLayer = window.dataLayer || []), gtag("js", new Date()), gtag("config", "G-98DP5VKS42");
+        </script>
         <h1>Bookmarklet Collection</h1>
         <h2>General Info</h2>
-            <p><b>How to add Bookmarklets</b> Click the bookmark button (star), a box will pop up and click more. Where it says URL, copy and paste the bookmarklet code. Then click save and your bookmarklet should appear with other bookmarks. It is that simple.</p>
+        <p>
+            <b>How to add Bookmarklets</b> Click the bookmark button (star), a box will pop up and click more. Where it says URL, copy and paste the bookmarklet code. Then click save and your bookmarklet should appear with other bookmarks.
+            It is that simple.
+        </p>
 
-            <h3>X-Ray Goggles</h3>
-            <p>This lets you edit the raw HTML. It's very advanced editing.</p>
-            <p>javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())</p>
+        <h3>X-Ray Goggles</h3>
+        <p>This lets you edit the raw HTML. It's very advanced editing.</p>
+        <p>
+            javascript:(function () {var
+            script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())
+        </p>
 
-            <h3>Randomized Tilt</h3>
-            <p>Tilts each element at a different degree (only slightly,you wont be seeing things upside down.) You can use this more than once to get different tilts.</p>
-            <p>javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(function(el){el.style[prefix + 'transform'] = 'rotate(' + (Math.floor(Math.random() * 3) - 1) + 'deg)';});});}())</p>
+        <h3>Randomized Tilt</h3>
+        <p>Tilts each element at a different degree (only slightly,you wont be seeing things upside down.) You can use this more than once to get different tilts.</p>
+        <p>
+            javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(function(el){el.style[prefix + 'transform'] = 'rotate(' +
+            (Math.floor(Math.random() * 3) - 1) + 'deg)';});});}())
+        </p>
 
-            <h3>Coordinates</h3>
-            <p>Shows the coordinates of you mouse's position. Coordinates shown at end of URL.</p>
-            <p>javascript:document.addEventListener('mousemove',function(e)%7Blocation.hash=(window.scrollX+e.clientX)+','+(window.scrollY+e.clientY)%7D,true);</p>
+        <h3>Coordinates</h3>
+        <p>Shows the coordinates of you mouse's position. Coordinates shown at end of URL.</p>
+        <p>javascript:document.addEventListener('mousemove',function(e)%7Blocation.hash=(window.scrollX+e.clientX)+','+(window.scrollY+e.clientY)%7D,true);</p>
 
-            <h3>Tab Cloak</h3>
-            <p>With this code you can change the the icon and the title of any tab.</p>
-            <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/tab-cloak.js">link to the code</a>.</p>
+        <h3>Tab Cloak</h3>
+        <p>With this code you can change the the icon and the title of any tab.</p>
+        <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/tab-cloak.js">link to the code</a>.</p>
 
-            <h3>Minecraft anywhere</h3>
-            <p>Play a mock minecraft on any webpage! Recovered by luphoria.</p>
-            <p>javascript:(function(){window.mcbmRootURI='https://luphoria.com/MCanywhere/';window.mcbmScriptURI='mcbm.min.js';window.mcbmLang='eng';var s,ss=window.mcbmRootURI+'js/mcbm-load.min.js';s=document.createElement('script');s.src=ss;document.body.appendChild(s);})();</p>
+        <h3>Minecraft anywhere</h3>
+        <p>Play a mock minecraft on any webpage! Recovered by luphoria.</p>
+        <p>
+            javascript:(function(){window.mcbmRootURI='https://luphoria.com/MCanywhere/';window.mcbmScriptURI='mcbm.min.js';window.mcbmLang='eng';var
+            s,ss=window.mcbmRootURI+'js/mcbm-load.min.js';s=document.createElement('script');s.src=ss;document.body.appendChild(s);})();
+        </p>
 
-            <h3>Edit+</h3>
-            <p>Allows to edit the page but if you click it while editing it removes the edit function. Thank you BluePotato#8397 for finding this!</p>
-            <p>javascript:if(document.body.contentEditable != 'true')void(document.body.contentEditable = 'true');else void(document.body.contentEditable = 'false');</p>
+        <h3>Edit+</h3>
+        <p>Allows to edit the page but if you click it while editing it removes the edit function. Thank you BluePotato#8397 for finding this!</p>
+        <p>javascript:if(document.body.contentEditable != 'true')void(document.body.contentEditable = 'true');else void(document.body.contentEditable = 'false');</p>
 
-            <h3>Edit</h3>
-            <p>Allows you to edit the page.</p>
-            <p>javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0</p>
+        <h3>Edit</h3>
+        <p>Allows you to edit the page.</p>
+        <p>javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0</p>
 
-            <h3>Unedit</h3>
-            <p>Removes editing ability (also removes cursor from edit).</p>
-            <p>javascript:document.body.contentEditable = 'false'; document.designMode='off'; void 0</p>
+        <h3>Unedit</h3>
+        <p>Removes editing ability (also removes cursor from edit).</p>
+        <p>javascript:document.body.contentEditable = 'false'; document.designMode='off'; void 0</p>
 
-            <h3>Asteroids</h3>
-            <p>Spawns a spaceship which can destroy stuff. Arrow keys to move, space to shoot, and escape to quit. You can also bounce!</p>
-            <p>javascript:var s=document.createElement('script');s.type='text/javascript';s.onerror=function(e){alert('Failed to load the script. The site\'s Content Security Policy might be blocking it. Feel free to try again.');};document.body.appendChild(s);s.src='https://blog.roysolberg.com/js/dom2.min.js';void(0);</p>
+        <h3>Asteroids</h3>
+        <p>Spawns a spaceship which can destroy stuff. Arrow keys to move, space to shoot, and escape to quit. You can also bounce!</p>
+        <p>
+            javascript:var s=document.createElement('script');s.type='text/javascript';s.onerror=function(e){alert('Failed to load the script. The site\'s Content Security Policy might be blocking it. Feel free to try
+            again.');};document.body.appendChild(s);s.src='https://blog.roysolberg.com/js/dom2.min.js';void(0);
+        </p>
 
-            <h3>Uglify</h3>
-            <p>Changes the font to comic sans, messes up pictures, changes font sizes, changes colors to pink and green, and when you click the screen spins. Highly destructive. Can make any page unrecognizable.</p>
-            <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/uglify.js">link to the code</a>.</p>
+        <h3>Uglify</h3>
+        <p>Changes the font to comic sans, messes up pictures, changes font sizes, changes colors to pink and green, and when you click the screen spins. Highly destructive. Can make any page unrecognizable.</p>
+        <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/uglify.js">link to the code</a>.</p>
 
-            <h3>Glitch All</h3>
-            <p>Changes the whole screen into a glitchy mess.</p>
-            <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/glitch.js">link to the code</a>.</p>
+        <h3>Glitch All</h3>
+        <p>Changes the whole screen into a glitchy mess.</p>
+        <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/glitch.js">link to the code</a>.</p>
 
-            <h3>360</h3>
-            <p>Makes the page spin in a circle.</p>
-            <p>javascript:(function(){var s=document.createElement('style');s.innerHTML='%40-moz-keyframes roll { 100%25 { -moz-transform: rotate(129600deg); } } %40-o-keyframes roll { 100%25 { -o-transform: rotate(129600deg); } } %40-webkit-keyframes roll { 100%25 { -webkit-transform: rotate(129600deg); } } body{ -moz-animation-name: roll; -moz-animation-duration: 1440s; -moz-animation-iteration-count: 360; -o-animation-name: roll; -o-animation-duration: 1440s; -o-animation-iteration-count: 360; -webkit-animation-name: roll; -webkit-animation-duration: 1440s; -webkit-animation-iteration-count: 360; }';document.getElementsByTagName('head')[0].appendChild(s);}());</p>
+        <h3>360</h3>
+        <p>Makes the page spin in a circle.</p>
+        <p>
+            javascript:(function(){var s=document.createElement('style');s.innerHTML='%40-moz-keyframes roll { 100%25 { -moz-transform: rotate(129600deg); } } %40-o-keyframes roll { 100%25 { -o-transform: rotate(129600deg); } }
+            %40-webkit-keyframes roll { 100%25 { -webkit-transform: rotate(129600deg); } } body{ -moz-animation-name: roll; -moz-animation-duration: 1440s; -moz-animation-iteration-count: 360; -o-animation-name: roll; -o-animation-duration:
+            1440s; -o-animation-iteration-count: 360; -webkit-animation-name: roll; -webkit-animation-duration: 1440s; -webkit-animation-iteration-count: 360; }';document.getElementsByTagName('head')[0].appendChild(s);}());
+        </p>
 
-            <h3>Eruda (Inspect element)</h3>
-            <p>A simple version of inspect element, but with plugins and more cool stuff! <a href="https://github.com/liriliri/eruda">It is open-source!</a></p>
-            <p>javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();</p>
+        <h3>Eruda (Inspect element)</h3>
+        <p>A simple version of inspect element, but with plugins and more cool stuff! <a href="https://github.com/liriliri/eruda">It is open-source!</a></p>
+        <p>javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();</p>
 
+        <h3>Ad-B-Gone</h3>
+        <p>A simple ad-blocker in a bookmarklet! Note: You will have to click it everytime you want to block ads!</p>
+        <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/ad-b-gone.js">link to the code</a>.</p>
 
-            <h3>Ad-B-Gone</h3>
-            <p>A simple ad-blocker in a bookmarklet! Note: You will have to click it everytime you want to block ads!</p>
-            <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/ad-b-gone.js">link to the code</a>.</p>
-
-            <h3>Snake Game</h3>
-            <p>This makes a little game window that you can play snake on.</p>
-            <p>javascript:Q=32;m=b=Q*Q;a=[P=l=u=d=p=S=w=0];u=8;f=(h=j=t=(b+Q)/2)-1;(B=(D=document).body).appendChild(x=D.createElement("p"));(X=x.style).position="fixed";X.left=X.top=0;X.background="#FFF%22;x.innerHTML=%22%3Cp%3E%3C/p%3E%3Ccanvas%3E%22;v=(s=x.childNodes)[0];(s=s[1]).width=s.height=5*Q;c=s.getContext(%222d%22);%20onkeydown=onblur=F=function(e,g){g?a[f]?(w+=m,f=Math.random(l+=8)*(R=Q-2)*R|(u=0),F(f+=Q+1+2*(f/R|0),g)):F(f):0%3Ee?(l?--l:(y=t,t=a[t]-2,F(y)),S+=(w*=0.8)/4,m=999/(u++%20+10),a[h+=[-1,-Q,1,Q][d=p]]?B.removeChild(x,alert(%22Game%20Over!\nThe%20game%20window%20will%20now%20be%20closed.\n\nMade%20by%203kh0%22)):(F(h),F(e,j=h),v.innerHTML=P?(setTimeout(F,50,e,0),S|0):%22Press%20P%20to%20play!%20Made%20by%203kh0%22)):-e?(y=(a[e]=e%3CQ|e%3E=Q*Q-Q|!(e%Q)|e%Q==Q-1|2*(e==h))+(e==f),e==h&&(a[j]=2+h),c.fillStyle=%22hsl(%22+99*!a[e]+%22,%22+2*m+%22%,%22+50*y+%22%)%22,c.fillRect(e%Q*5,5*(e/Q|0),5,5)):isNaN(y=e.keyCode-37)|43==y?(P=y&&!P)&&F(-1):%20p=!P|y&-4|!(y^2^d)?p:y;return!1};for(;--b;F(b));void%20F(-1);</p>
-
-        </ul>
+        <h3>Snake Game</h3>
+        <p>This makes a little game window that you can play snake on.</p>
+        <p>
+            javascript:Q=32;m=b=Q*Q;a=[P=l=u=d=p=S=w=0];u=8;f=(h=j=t=(b+Q)/2)-1;(B=(D=document).body).appendChild(x=D.createElement("p"));(X=x.style).position="fixed";X.left=X.top=0;X.background="#FFF%22;x.innerHTML=%22%3Cp%3E%3C/p%3E%3Ccanvas%3E%22;v=(s=x.childNodes)[0];(s=s[1]).width=s.height=5*Q;c=s.getContext(%222d%22);%20onkeydown=onblur=F=function(e,g){g?a[f]?(w+=m,f=Math.random(l+=8)*(R=Q-2)*R|(u=0),F(f+=Q+1+2*(f/R|0),g)):F(f):0%3Ee?(l?--l:(y=t,t=a[t]-2,F(y)),S+=(w*=0.8)/4,m=999/(u++%20+10),a[h+=[-1,-Q,1,Q][d=p]]?B.removeChild(x,alert(%22Game%20Over!\nThe%20game%20window%20will%20now%20be%20closed.\n\nMade%20by%203kh0%22)):(F(h),F(e,j=h),v.innerHTML=P?(setTimeout(F,50,e,0),S|0):%22Press%20P%20to%20play!%20Made%20by%203kh0%22)):-e?(y=(a[e]=e%3CQ|e%3E=Q*Q-Q|!(e%Q)|e%Q==Q-1|2*(e==h))+(e==f),e==h&&(a[j]=2+h),c.fillStyle=%22hsl(%22+99*!a[e]+%22,%22+2*m+%22%,%22+50*y+%22%)%22,c.fillRect(e%Q*5,5*(e/Q|0),5,5)):isNaN(y=e.keyCode-37)|43==y?(P=y&&!P)&&F(-1):%20p=!P|y&-4|!(y^2^d)?p:y;return!1};for(;--b;F(b));void%20F(-1);
+        </p>
     </body>
 </html>
