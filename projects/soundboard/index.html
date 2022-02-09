@@ -76,6 +76,8 @@
                 document.getElementById("full-table-broken").play();
                 document.getElementById("airhorn").play();
                 document.getElementById("badumtss").play();
+                document.getElementById("yoda-laugh").play();
+                document.getElementById("sad_song").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -124,6 +126,8 @@
                 document.getElementById("full-table-broken").load();
                 document.getElementById("airhorn").load();
                 document.getElementById("badumtss").load();
+                document.getElementById("yoda-laugh").load();
+                document.getElementById("sad_song").load();
             }
         </script>
         <div class="control">
@@ -744,16 +748,27 @@
                 </div>
             </div>
             <div>
-                <div class="yoda-laugh">
+                <div class="sound">
                  <div class="circle small-button-background" style="background-color:#09b33c;"></div>
-                  <audio id="SOUND" src="sounds/yoda-laugh.mp3" preload="auto"></audio>
+                  <audio id="yoda-laugh" src="sounds/yoda-laugh.mp3" preload="auto"></audio>
                    <button class="small-button" onclick="document.getElementById('yoda-laugh').play();"></button>
                     <div class="small-button-shadow"></div>
                     <p class="name"><button onclick="window.location.href='sounds/yoda-laugh.mp3'">Download</button><br>
                         Yoda laugh<br>
                      </p>
                 </div>
-               </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#326fa8;"></div>
+                  <audio id="sad_song" src="sounds/sad_song.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('sad_song').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/sad_song.mp3'">Download</button><br>
+                    Damaged coda<br>
+                     </p>
+                </div>
+            </div>
 
             <!-- TEMPLATE TO ADD MORE SOUNDS
 
