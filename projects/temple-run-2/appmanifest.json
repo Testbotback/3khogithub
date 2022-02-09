@@ -1,6 +1,8 @@
 {
   "name": "Temple Run 2",
   "short_name": "Temple Run 2",
+  "description": "Play one of the top mobile games made by Imangi Studios right in your browser! Run as you are being chased, how far will you go?",
+  "version": "2.0",
   "theme_color": "#000000",
   "background_color": "#000000",
   "display": "fullScreen",
