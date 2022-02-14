@@ -12,9 +12,9 @@
             (window.dataLayer = window.dataLayer || []), gtag("js", new Date()), gtag("config", "G-98DP5VKS42");
         </script>
         <script>
-        var url = document.getElementById('url-target');
         function create() {
-            win = window.open();
+        	var url = document.getElementById('input');
+            var win = window.open();
             win.document.body.style.margin = '0';
             win.document.body.style.height = '100vh';
             var iframe = win.document.createElement('iframe');
@@ -26,7 +26,7 @@
             win.document.body.appendChild(iframe);
         }
         </script>
-        <input type="url" placeholder="https://google.com" id='url-target'/>
+        <input type="text" value="https://www.google.com/" placeholder="https://google.com" id='input' autofocus>
         <button onclick='create()'>Create!</button>
     </body>
 </html>
