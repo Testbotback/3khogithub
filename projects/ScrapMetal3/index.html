@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Scrap Metal 3 | 3kh0</title>
+    <link rel="shortcut icon" href="utka.ico">
+    <link rel="stylesheet" href="zombies11.css">
+    <script src="utkaUnityProgress.js"></script>
+    <script src="scrapUnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "ScrapMetal3.json", {onProgress: UnityProgress});
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-98DP5VKS42');
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Scrap Metal 3 Infernal Trap</div>
+      </div>
+    </div>
+  </body>
+</html>
