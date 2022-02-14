@@ -1,11 +1,11 @@
-=============
-| Changelog |
-=============
+=================
+|   Changelog   |
+=================
 Here is where I will post updates on when a new game is added or something changed. Besure to check back often for any sneakpeaks!
 ------------------------------------------------------------
 Feb, 14
-<p>Happy Valentines day for those how celebrate it!
-+ Changelog page
+Happy Valentines day for those how celebrate it!
++ Changelog page! Pog!
 + Started research on writing iframes on a about:blank page
 ^ Updated the "green text" on the homepage.
 Have a great rest of your day!
