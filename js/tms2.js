@@ -1,5 +1,6 @@
 function domaincheck() {
-    if (document.domain == "3kh0.github.io") {
+    var domain = document.domain;
+    if (domain == "3kh0.github.io") {
         console.log("Correct! Game on!")
     } else {
         // not correct page
