@@ -1,9 +1,15 @@
 function domaincheck() {
     var domain = document.domain;
     if (domain == "3kh0.github.io") {
-        console.log("Correct! Game on!")
+        console.log("This page is on the 3kh0.github.io domain!")
+        var referrer = document.referrer; // grab referrer
+        if (referrer != "null") { 
+            // this prevents (almost) any embed!
+            document.write("<h1>Hello gamers! Please go <a href='https://3kh0.github.io/'>here</a> for better games.</h1><h3>Site-owners, if you are confused on why this happened, please read <a href='https://github.com/3kh0/3kh0.github.io/wiki/Note-to-people-stealing-my-games'>this</a>.</h3>");
+            console.log("Sorry, this page was embeded, and that is not allowed!")
+        }
     } else {
-        // not correct page
+        // this will run if the script is run on a domain different to 3kh0.github.io
         document.write("<h1>Hello gamers! Please go <a href='https://3kh0.github.io/'>here</a> for better games.</h1><h3>Site-owners, if you are confused on why this happened, please read <a href='https://github.com/3kh0/3kh0.github.io/wiki/Note-to-people-stealing-my-games'>this</a>.</h3>");
     }
 }
