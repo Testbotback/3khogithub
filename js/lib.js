@@ -2,7 +2,9 @@ function check() {
     console.log("Checking this page... Please wait.")
     var domain = document.domain; // grab domain
     console.log("Domain: " + domain) // log domain
-    if (domain == "3kh0-git-tms-3kh0.vercel.app") {
+    const approvedDomains = ["3kh0.github.io", "3kh0.vercel.app", "3kh0.netlify.app", "3kh0-git-tms-3kh0.vercel.app"];
+    var adC = approvedDomains.includes(domain);
+    if (adC = true) {
         console.log("This page is on the domain!")
 
         var referrerFull = document.referrer; // grab referrer
@@ -11,9 +13,9 @@ function check() {
         var referrer = referrerFull.replace('http://',"").replace('https://',"").split(/[/?#]/)[0];
         console.log("Referrer host: " + referrer) // log referrer
 
-        const ar = ["3kh0.github.io", "3kh0.vercel.app", "3kh0.netlify.app", "3kh0-git-tms-3kh0.vercel.app"];
-        var ye = ar.includes(referrer);
-        if (ye = false) {
+        const approvedReferrers = ["3kh0.github.io", "3kh0.vercel.app", "3kh0.netlify.app", "3kh0-git-tms-3kh0.vercel.app"];
+        var arC = approvedReferrers.includes(referrer);
+        if (arC = false) {
             document.write("<h1>Hello gamers! Please go <a href='https://3kh0.github.io/'>here</a> for better games.</h1><h3>Site-owners, if you are confused on why this happened, please read <a href='https://github.com/3kh0/3kh0.github.io/wiki/Note-to-people-stealing-my-games'>this</a>.</h3>");
             console.log("Sorry, this page was embeded, and that is not allowed!")
         }
