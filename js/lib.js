@@ -1,3 +1,8 @@
+const ad = [
+    "3kh0-git-tms-3kh0.vercel.app",
+    "3kh0.github.io",
+    "3kh0.vercel.app"
+  ];
 function check() {
     console.log("Checking this page... Please wait.")
     var domain = document.domain; // grab domain
