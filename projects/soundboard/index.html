@@ -79,6 +79,7 @@
                 document.getElementById("badumtss").play();
                 document.getElementById("yoda-laugh").play();
                 document.getElementById("sad_song").play();
+                document.getElementById("cut-g").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -129,6 +130,7 @@
                 document.getElementById("badumtss").load();
                 document.getElementById("yoda-laugh").load();
                 document.getElementById("sad_song").load();
+                document.getElementById("cut-g").load();
             }
         </script>
         <div class="control">
@@ -770,6 +772,17 @@
                      </p>
                 </div>
             </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#3464eb;"></div>
+                  <audio id="cut-g" src="sounds/cut-g.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('cut-g').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/cut-g.mp3'">Download</button><br>
+                    I like ya cut g<br>
+                     </p>
+                </div>
+               </div>
 
             <!-- TEMPLATE TO ADD MORE SOUNDS
 
