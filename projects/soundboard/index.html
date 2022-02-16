@@ -80,6 +80,7 @@
                 document.getElementById("yoda-laugh").play();
                 document.getElementById("sad_song").play();
                 document.getElementById("cut-g").play();
+                document.getElementById("i_love_refrigerators").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -131,6 +132,7 @@
                 document.getElementById("yoda-laugh").load();
                 document.getElementById("sad_song").load();
                 document.getElementById("cut-g").load();
+                document.getElementById("i_love_refrigerators").load();
             }
         </script>
         <div class="control">
@@ -782,7 +784,18 @@
                     I like ya cut g<br>
                      </p>
                 </div>
-               </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#9aa1ab;"></div>
+                  <audio id="i_love_refrigerators" src="sounds/i_love_refrigerators.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('i_love_refrigerators').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/i_love_refrigerators.mp3'">Download</button><br>
+                    I love refrigerators!<br>
+                     </p>
+                </div>
+            </div>
 
             <!-- TEMPLATE TO ADD MORE SOUNDS
 
