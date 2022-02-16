@@ -1,19 +1,19 @@
-const ad = [
-    "3kh0-git-tms-3kh0.vercel.app",
-    "3kh0.github.io",
-    "3kh0.vercel.app"
-  ];
 function check() {
     console.log("Checking this page... Please wait.")
     var domain = document.domain; // grab domain
     console.log("Domain: " + domain) // log domain
     if (domain == "3kh0-git-tms-3kh0.vercel.app") {
         console.log("This page is on the domain!")
+
         var referrerFull = document.referrer; // grab referrer
+        console.log("Referrer: " + referrerFull) // log referrer
+
         var referrer = referrerFull.replace('http://',"").replace('https://',"").split(/[/?#]/)[0];
-        console.log("Referrer: " + referrer) // log referrer
-        if (referrer != "") { 
-            // this prevents (almost) any embed!
+        console.log("Referrer host: " + referrer) // log referrer
+
+        const ad = ["3kh0.github.io", "3kh0.vercel.app", "3kh0-git-tms-3kh0.vercel.app"];
+        var ye = fruits.includes(referrer);
+        if (ye = true) {
             document.write("<h1>Hello gamers! Please go <a href='https://3kh0.github.io/'>here</a> for better games.</h1><h3>Site-owners, if you are confused on why this happened, please read <a href='https://github.com/3kh0/3kh0.github.io/wiki/Note-to-people-stealing-my-games'>this</a>.</h3>");
             console.log("Sorry, this page was embeded, and that is not allowed!")
         }
