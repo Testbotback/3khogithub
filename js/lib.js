@@ -1,3 +1,7 @@
+const getHostname = (url) => {
+    // use URL constructor and return hostname
+    return new URL(url).hostname;
+  }
 const ad = [
     "3kh0-git-tms-3kh0.vercel.app",
     "3kh0.github.io",
@@ -9,8 +13,9 @@ function check() {
     console.log("Domain: " + domain) // log domain
     if (domain == "3kh0-git-tms-3kh0.vercel.app") {
         console.log("This page is on the 3kh0.github.io domain!")
-        var referrer = document.referrer; // grab referrer
-        console.log("Referrer: " + referrer) // log referrer
+        var referrerFull = document.referrer; // grab referrer
+        var referrer = getHostname(referrerFull);
+        console.log("Referrer: " + referrerFull) // log referrer
         if (referrer != "") { 
             // this prevents (almost) any embed!
             document.write("<h1>Hello gamers! Please go <a href='https://3kh0.github.io/'>here</a> for better games.</h1><h3>Site-owners, if you are confused on why this happened, please read <a href='https://github.com/3kh0/3kh0.github.io/wiki/Note-to-people-stealing-my-games'>this</a>.</h3>");
