@@ -87,6 +87,7 @@
                 document.getElementById("radio-beep").play();
                 document.getElementById("9+10=21").play();
                 document.getElementById("emotional-damage").play();
+                document.getElementById("hog-rider").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -145,6 +146,7 @@
                 document.getElementById("radio-beep").load();
                 document.getElementById("9+10=21").load();
                 document.getElementById("emotional-damage").load();
+                document.getElementById("hog-rider").load();
             }
         </script>
         <div class="control">
@@ -826,6 +828,17 @@
                     <div class="small-button-shadow"></div>
                     <p class="name"><button onclick="window.location.href='sounds/emotional-damage.mp3'">Download</button><br>
                         Emotional damage
+                     </p>
+                </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#4d0808;"></div>
+                  <audio id="hog-rider" src="sounds/hog-rider.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('hog-rider').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/hog-rider.mp3'">Download</button><br>
+                     Hog Rider!<br>
                      </p>
                 </div>
             </div>
