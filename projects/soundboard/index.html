@@ -98,6 +98,7 @@
                 document.getElementById("goofy-yell").play();
                 document.getElementById("sike").play();
                 document.getElementById("why-are-you-running").play();
+                document.getElementById("coffin-dance").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -167,6 +168,7 @@
                 document.getElementById("goofy-yell").load();
                 document.getElementById("sike").load();
                 document.getElementById("why-are-you-running").load();
+                document.getElementById("coffin-dance").load();
             }
         </script>
         <div class="control">
@@ -980,6 +982,17 @@
                     <div class="small-button-shadow"></div>
                     <p class="name"><button onclick="window.location.href='sounds/why-are-you-running.mp3'">Download</button><br>
                      Why are you running?<br>
+                     </p>
+                </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#36210d;"></div>
+                  <audio id="coffin-dance" src="sounds/coffin-dance.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('coffin-dance').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/coffin-dance.mp3'">Download</button><br>
+                     Coffin Dance song<br>
                      </p>
                 </div>
             </div>
