@@ -96,6 +96,7 @@
                 document.getElementById("wrong").play();
                 document.getElementById("mario").play();
                 document.getElementById("goofy-yell").play();
+                document.getElementById("sike").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -163,6 +164,7 @@
                 document.getElementById("wrong").load();
                 document.getElementById("mario").load();
                 document.getElementById("goofy-yell").load();
+                document.getElementById("sike").load();
             }
         </script>
         <div class="control">
@@ -954,6 +956,17 @@
                     <div class="small-button-shadow"></div>
                     <p class="name"><button onclick="window.location.href='sounds/goofy-yell.mp3'">Download</button><br>
                      Goofy dog yell<br>
+                     </p>
+                </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#0e5bc7;"></div>
+                  <audio id="sike" src="sounds/sike.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('sike').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/sike.mp3'">Download</button><br>
+                     Sike! Thats the wrong number!<br>
                      </p>
                 </div>
             </div>
