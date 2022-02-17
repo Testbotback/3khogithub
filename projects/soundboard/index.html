@@ -84,6 +84,7 @@
                 document.getElementById("i-will-send-you-to-jesus").play();
                 document.getElementById("imposter").play();
                 document.getElementById("run").play();
+                document.getElementById("radio-beep").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -139,6 +140,7 @@
                 document.getElementById("i-will-send-you-to-jesus").load();
                 document.getElementById("imposter").load();
                 document.getElementById("run").load();
+                document.getElementById("radio-beep").load();
             }
         </script>
         <div class="control">
@@ -787,6 +789,17 @@
                     <div class="small-button-shadow"></div>
                     <p class="name"><button onclick="window.location.href='sounds/run.mp3'">Download</button><br>
                      RUN<br>
+                     </p>
+                </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#1e4fe3;"></div>
+                  <audio id="radio-beep" src="sounds/radio-beep.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('radio-beep').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/radio-beep.mp3'">Download</button><br>
+                     Radio beep<br>
                      </p>
                 </div>
             </div>
