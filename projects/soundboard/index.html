@@ -85,6 +85,7 @@
                 document.getElementById("imposter").play();
                 document.getElementById("run").play();
                 document.getElementById("radio-beep").play();
+                document.getElementById("9+10=21").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -141,6 +142,7 @@
                 document.getElementById("imposter").load();
                 document.getElementById("run").load();
                 document.getElementById("radio-beep").load();
+                document.getElementById("9+10=21").load();
             }
         </script>
         <div class="control">
@@ -800,6 +802,17 @@
                     <div class="small-button-shadow"></div>
                     <p class="name"><button onclick="window.location.href='sounds/radio-beep.mp3'">Download</button><br>
                      Radio beep<br>
+                     </p>
+                </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#03fcb1;"></div>
+                  <audio id="9+10=21" src="sounds/9+10=21.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('9+10=21').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/9+10=21.mp3'">Download</button><br>
+                     9 + 10 = 21 Kid<br>
                      </p>
                 </div>
             </div>
