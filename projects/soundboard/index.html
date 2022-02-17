@@ -101,6 +101,7 @@
                 document.getElementById("coffin-dance").play();
                 document.getElementById("nestle-crunch").play();
                 document.getElementById("hit-marker").play();
+                document.getElementById("sad-violin").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -173,6 +174,7 @@
                 document.getElementById("coffin-dance").load();
                 document.getElementById("nestle-crunch").load();
                 document.getElementById("hit-marker").load();
+                document.getElementById("sad-violin").load();
             }
         </script>
         <div class="control">
@@ -1019,6 +1021,17 @@
                     <div class="small-button-shadow"></div>
                     <p class="name"><button onclick="window.location.href='sounds/hit-marker.mp3'">Download</button><br>
                     MLG Hit Marker<br>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#0400ff;"></div>
+                  <audio id="sad-violin" src="sounds/sad-violin.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('sad-violin').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/sad-violin.mp3'">Download</button><br>
+                    Sad violin (meme)<br>
                     </p>
                 </div>
             </div>
