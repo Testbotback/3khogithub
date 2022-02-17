@@ -94,6 +94,7 @@
                 document.getElementById("yeah").play();
                 document.getElementById("skull-trumpet").play();
                 document.getElementById("wrong").play();
+                document.getElementById("mario").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -159,6 +160,7 @@
                 document.getElementById("yeah").load();
                 document.getElementById("skull-trumpet").load();
                 document.getElementById("wrong").load();
+                document.getElementById("mario").load();
             }
         </script>
         <div class="control">
@@ -928,6 +930,17 @@
                     <div class="small-button-shadow"></div>
                     <p class="name"><button onclick="window.location.href='sounds/wrong.mp3'">Download</button><br>
                      Donald Trump Wrong!<br>
+                     </p>
+                </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#ff0000;"></div>
+                  <audio id="mario" src="sounds/mario.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('mario').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/mario.mp3'">Download</button><br>
+                     Its a me, Mario!<br>
                      </p>
                 </div>
             </div>
