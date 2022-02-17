@@ -11,6 +11,7 @@
 }
 #hcb_submit {
   border-radius: 10px;
+  display: none;
 }
 #hcb_form_content {
   border-radius: 10px;
