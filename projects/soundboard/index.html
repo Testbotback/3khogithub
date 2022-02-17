@@ -86,6 +86,7 @@
                 document.getElementById("run").play();
                 document.getElementById("radio-beep").play();
                 document.getElementById("9+10=21").play();
+                document.getElementById("emotional-damage").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -143,6 +144,7 @@
                 document.getElementById("run").load();
                 document.getElementById("radio-beep").load();
                 document.getElementById("9+10=21").load();
+                document.getElementById("emotional-damage").load();
             }
         </script>
         <div class="control">
@@ -813,6 +815,17 @@
                     <div class="small-button-shadow"></div>
                     <p class="name"><button onclick="window.location.href='sounds/9+10=21.mp3'">Download</button><br>
                      9 + 10 = 21 Kid<br>
+                     </p>
+                </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#fc0303;"></div>
+                  <audio id="emotional-damage" src="sounds/emotional-damage.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('emotional-damage').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/emotional-damage.mp3'">Download</button><br>
+                        Emotional damage
                      </p>
                 </div>
             </div>
