@@ -93,6 +93,7 @@
                 document.getElementById("to-be-continued").play();
                 document.getElementById("yeah").play();
                 document.getElementById("skull-trumpet").play();
+                document.getElementById("wrong").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -157,6 +158,7 @@
                 document.getElementById("to-be-continued").load();
                 document.getElementById("yeah").load();
                 document.getElementById("skull-trumpet").load();
+                document.getElementById("wrong").load();
             }
         </script>
         <div class="control">
@@ -917,7 +919,18 @@
                      Skull Trumpet doot doot<br>
                      </p>
                 </div>
-               </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#ff0000;"></div>
+                  <audio id="wrong" src="sounds/wrong.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('wrong').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/wrong.mp3'">Download</button><br>
+                     Donald Trump Wrong!<br>
+                     </p>
+                </div>
+            </div>
 
             <!-- TEMPLATE TO ADD MORE SOUNDS
 
