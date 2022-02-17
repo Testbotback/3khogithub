@@ -82,6 +82,7 @@
                 document.getElementById("cut-g").play();
                 document.getElementById("i_love_refrigerators").play();
                 document.getElementById("i-will-send-you-to-jesus").play();
+                document.getElementById("imposter").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -135,6 +136,7 @@
                 document.getElementById("cut-g").load();
                 document.getElementById("i_love_refrigerators").load();
                 document.getElementById("i-will-send-you-to-jesus").load();
+                document.getElementById("imposter").load();
             }
         </script>
         <div class="control">
@@ -761,6 +763,17 @@
                     <div class="small-button-shadow"></div>
                     <p class="name"><button onclick="window.location.href='sounds/i-will-send-you-to-jesus.mp3'">Download</button><br>
                      I will send you to jesus!<br>
+                     </p>
+                </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#ff0000;"></div>
+                  <audio id="imposter" src="sounds/imposter.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('imposter').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/imposter.mp3'">Download</button><br>
+                     Among us imposter<br>
                      </p>
                 </div>
             </div>
