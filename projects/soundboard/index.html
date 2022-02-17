@@ -91,6 +91,7 @@
                 document.getElementById("sprite-cranberry").play();
                 document.getElementById("fbi-open-up").play();
                 document.getElementById("to-be-continued").play();
+                document.getElementById("yeah").play();
             }
             function stopAll() {
                 document.getElementById("fart").load();
@@ -153,6 +154,7 @@
                 document.getElementById("sprite-cranberry").load();
                 document.getElementById("fbi-open-up").load();
                 document.getElementById("to-be-continued").load();
+                document.getElementById("yeah").load();
             }
         </script>
         <div class="control">
@@ -878,6 +880,17 @@
                     <div class="small-button-shadow"></div>
                     <p class="name"><button onclick="window.location.href='sounds/to-be-continued.mp3'">Download</button><br>
                     Jojo To be continued music<br>
+                     </p>
+                </div>
+            </div>
+            <div>
+                <div class="sound">
+                 <div class="circle small-button-background" style="background-color:#000000;"></div>
+                  <audio id="yeah" src="sounds/yeah.mp3" preload="auto"></audio>
+                   <button class="small-button" onclick="document.getElementById('yeah').play();"></button>
+                    <div class="small-button-shadow"></div>
+                    <p class="name"><button onclick="window.location.href='sounds/yeah.mp3'">Download</button><br>
+                     YEAH!!!!!<br>
                      </p>
                 </div>
             </div>
