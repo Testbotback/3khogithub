@@ -2548,15 +2548,10 @@ function Tetris(d) {
                     if (s.won) {
                         j.addLine("You Win!");
                     } else {
-                        j.addLine("Better Luck Next Time");
+                        j.addLine("Better Luck Next Time.");
                     }
                     j.addLine("");
                     j.addLine("");
-                    j.addLine("Re-directing you to");
-                    j.addLine("the score screen...");
-                    j.addLine("");
-                    j.addLine("");
-                    sendScoreRequest(s.score);
                 }
             }
         } else {
