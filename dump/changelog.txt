@@ -7,6 +7,16 @@
 
 Here is where I will post updates on when a new game is added or something changed. Besure to check back often for any sneakpeaks or other goodies! If I can I will try to setup a RSS feed for all of those who use that. Coming soon!
 ------------------------------------------------------------
+Feb, 21
++ Added Cut the rope (thx Piplup! :)
++ Added Cut the rope: Time Travel (thx Piplup! :)
++ Added Zombs Royale
++ Added Vex 5
++ Added people.txt (https://3kh0.github.io/dump/people.txt)
+^ Revamp the comment box, will reenable soon-ish
+^ Fixed issue of Tetris not working.
+^ Updated green text (again)
+------------------------------------------------------------
 Feb, 16
 + Added Tank Trouble 2
 + Added more sounds to the soundboard
