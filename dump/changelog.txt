@@ -7,9 +7,15 @@
 
 Here is where I will post updates on when a new game is added or something changed. Besure to check back often for any sneakpeaks or other goodies! If I can I will try to setup a RSS feed for all of those who use that. Coming soon!
 ------------------------------------------------------------
+Feb, 22
+Happy TWOsday! Haha
++ Added Vex 4 (thx Piplup! :) again)
++ Added Vex 3
+^ Add back tetris icon for project menu (thx u4pak!)
+------------------------------------------------------------
 Feb, 21
 + Added Cut the rope (thx Piplup! :)
-+ Added Cut the rope: Time Travel (thx Piplup! :)
++ Added Cut the rope: Time Travel
 + Added Zombs Royale
 + Added Vex 5
 + Added people.txt (https://3kh0.github.io/dump/people.txt)
